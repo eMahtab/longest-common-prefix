@@ -18,3 +18,25 @@ Explanation: There is no common prefix among the input strings.
 ```
 **Note:**
 All given inputs are in lowercase letters a-z.
+
+
+# Implementation :
+
+```java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if(strs == null || strs.length == 0)
+            return "";
+        String longestCommonPrefix = "";
+        int index = 0;
+        for(int i = 0; i < strs[0].length(); i++){
+            for(int j = 1; j < strs.length; j++){
+                if(strs[j].length() <= i || strs[0].charAt(i) != strs[j].charAt(i))
+                    return longestCommonPrefix;
+            }
+            longestCommonPrefix += strs[0].charAt(i);
+        }
+        return longestCommonPrefix;
+    }
+}
+```
