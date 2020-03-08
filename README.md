@@ -40,3 +40,8 @@ class Solution {
     }
 }
 ```
+
+# References :
+1. https://www.youtube.com/watch?v=1YQmI7F9dJ0
+2. https://www.youtube.com/watch?v=bl8ue-dTxgs
+3. https://leetcode.com/articles/longest-common-prefix
